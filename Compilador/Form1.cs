@@ -325,7 +325,7 @@ namespace Compilador
         {
             try
             {
-                serialPort1.Open();
+                serialPort1.Open();         //abrimos puerto serie
                 bool error = true;
 
                 for(int i=0; i<5;i++)
