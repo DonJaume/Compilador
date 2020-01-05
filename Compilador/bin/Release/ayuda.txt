@@ -1,0 +1,38 @@
+INSTRUCCIONES:
+
+NOP	Pasa un ciclo de reloj sin hacer nada.
+MOVLW	Mueve literal al acumulador
+MOVF	Mueve registro al acumulador
+MOVWF	Mueve acumulador a registro
+ADDLW	Suma el literal al acumulador
+SUBLW	Resta el literal al acumulador
+ANDLW	Realiza AND entre literal y acumulador
+IORLW	Realiza OR entre literal y acumulador
+COMW	Complementa el acumulador
+RLF	Rota acumulador a la izquierda
+RRF	Rota acumulador a la derecha
+GOTO	Salto incondicional
+JPC	Salta si Carry
+JPZ	Salta si Zero
+
+DIRECTIVAS:
+; (PUNTO Y COMA) Indica el inicio de un comentario, el compilador no tendrá en cuenta todo lo que venga detrás (color verde)
+
+# (almohadilla)	 Directiva de asignación. El valor <expr> es asignado a la etiqueta <lable>. Siempre que el nombre aparece en el programa es sustituido por el valor numérico.
+		 Usado para asignar nombre a direcciones de memoria o para dar nombre a valores
+		 Sintaxis: #<lable> <expr>
+		 Ejemplo:  #REPETICIONES 05
+
+* (asterisco)	 Etiqueta, identifica una determinada instrucción en el programa, asignando a esa etiqueta el valor de la dirección-
+		 Sintaxis: *<lable>
+		 Ejemplo:
+				*Inicio
+				MOVLW 05
+				...	
+				...
+				GOTO Inicio     ;Salta a la posición de memoria marcada con "Inicio", en este caso, instrucción MOVLW 05
+
+ORG		 Indica al programa ensamblador la dirección en memoria de programa a partir de la cual deben ensamblarse las direcciones
+		 Sintaxis: ORG 04
+
+END		 Indica al compilador el final del programa. Mantendrá un bucle infinito en ese punto.
