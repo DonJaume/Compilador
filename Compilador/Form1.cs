@@ -19,11 +19,21 @@ namespace Compilador
         {
             InitializeComponent();
         }
+        //variables estaticas varias
+        static int _IntentosGrabacion = 5;      //intentos para conectar con la Izezum
+        static int _TiempoEspera = 1000;        //tiempo de espera entre intentos
+
+
+
 
         //**variables de menú archivo
         string RutaArchivo;
         string NombreArchivo;
         bool CambiosArchivo = false;
+
+        //**variables seleccion puerto Serie
+        string PuertoSeleccionado = "";
+        
 
         //**variables de compilado y coloreado
         Hashtable claves;
@@ -321,36 +331,58 @@ namespace Compilador
             }
         }
 
+        //PROGRAMA VIA PUERTO COM LA ICEZUM CON EL BINARIO GENERADO
         void Programar(byte[] binario)
         {
-            try
+            //comprobamos se ha seleccionado puerto serie y si éste aún existe
+            if (comprobarpuertoserie())      
             {
-                serialPort1.Open();         //abrimos puerto serie
-                bool error = true;
-
-                for(int i=0; i<5;i++)
+                try
                 {
-                    if (serialPort1.CtsHolding)
+                    serialPort1.PortName = PuertoSeleccionado;      //asignamos puerto serie
+                    serialPort1.Open();                             //lo abrimos
+                    bool error = true;
+
+                    //intentos para programar la placa
+                    for (int i = 0; i < _IntentosGrabacion; i++)
                     {
-                        serialPort1.Write(binario, 0, binario.Length);
-                        labelCompilado.Text = labelCompilado.Text + " | Programa cargado";
-                        error = false;
-                        break;
+                        //SI LA ICEZUM ACTIVA EL BIT CTS PROCEDEMOS A ENVIAR LOS DATOS DEL PROGRAMA
+                        if (serialPort1.CtsHolding)     
+                        {
+                            serialPort1.Write(binario, 0, binario.Length);                              //Enviar los datos via serie
+                            labelCompilado.Text = labelCompilado.Text + " | Programa cargado";          //Mostramos la información en la barra inferior
+                            error = false;                                                              //bandera para indicar que no hay error
+                            break;                                                                      //salimos del loop de intentos
+                        }
+                        else
+                        {
+                            System.Threading.Thread.Sleep(_TiempoEspera);                               //espera para intentar la programación
+                        }
                     }
-                    else
-                    {
-                        System.Threading.Thread.Sleep(1000);                        
-                    }
+
+                    //si han pasado los loops establecidos, entendemos que la icezum no está conectada o no esta en modo programación
+                    if (error) MessageBox.Show("Datos no cargados. Compruebe la conexión con el uC y que éste está en modo programación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
                 }
 
-                if(error) MessageBox.Show("Datos no cargados. Compruebe que el uC está en modo programación.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                //Capturamos y mostramos posibles errores
+                catch (Exception e)
+                {
+                    MessageBox.Show(e.Message, e.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+                finally
+                {
+                    serialPort1.Close();    //cerramos puerto serie
+                }
+                
             }
-            catch(Exception e)
+
+            // si no hay puero serie seleccionado mostramos un mensaje en pantalla
+            else
             {
-                MessageBox.Show(e.Message, e.Source, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }   
-            serialPort1.Close();
+                MessageBox.Show("Seleccone puerto serie", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         //-----------------ZONA DE COLOREADO DE INSTRUCCIONES----------------------------------------------
@@ -864,6 +896,45 @@ namespace Compilador
             ayuda.Show();
         }
 
-       
+
+        //REFRESCA LOS PUERTOS COM DEL EQUIPO
+        private void compilarToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
+        {
+
+            string[] PuertosCOM = System.IO.Ports.SerialPort.GetPortNames();                     //Leemos los puertos disponibles en el pc
+            ToolStripMenuItem item = new ToolStripMenuItem();                           //Creamos una matriz para los items
+
+            toolStripMenuItemPuerto.DropDownItems.Clear();
+
+            //recorremos todos los puertos
+            for (int i =0; i< PuertosCOM.Length;i++)
+            {
+                item = new ToolStripMenuItem();
+                item.Name = PuertosCOM[i];
+                item.Text = PuertosCOM[i];
+                if (PuertosCOM[i] == PuertoSeleccionado) item.Checked = true;
+                item.Click += new EventHandler(SeleccionarPuerto);
+                toolStripMenuItemPuerto.DropDownItems.Add(item);
+            }
+        }
+
+        private void SeleccionarPuerto(object sender, EventArgs e)
+        {
+            ToolStripMenuItem Puerto = (ToolStripMenuItem)sender;
+            PuertoSeleccionado = Puerto.Text;
+        }
+
+        private bool comprobarpuertoserie()
+        {
+            string[] PuertosCOM = System.IO.Ports.SerialPort.GetPortNames();
+
+            if (PuertoSeleccionado == "") return false;
+
+            for (int i = 0; i < PuertosCOM.Length; i++)
+                if (PuertoSeleccionado == PuertosCOM[i]) return true;
+
+            PuertoSeleccionado = "";
+            return false;
+        }
     }
 }

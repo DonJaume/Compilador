@@ -29,54 +29,54 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("ORG");
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("NOP");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("MOVLW");
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("MOVF");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("MOVWF");
-            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("ADDLW");
-            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("SUBLW");
-            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("ANDLW");
-            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("IORLW");
-            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("COMW");
-            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("RLF");
-            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("RRF");
-            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("GOTO");
-            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("JPC");
-            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("JPZ");
-            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("CALL");
-            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("RETURN");
-            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("END");
-            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("Instrucciones", new System.Windows.Forms.TreeNode[] {
-            treeNode51,
-            treeNode52,
-            treeNode53,
-            treeNode54,
-            treeNode55,
-            treeNode56,
-            treeNode57,
-            treeNode58,
-            treeNode59,
-            treeNode60,
-            treeNode61,
-            treeNode62,
-            treeNode63,
-            treeNode64,
-            treeNode65,
-            treeNode66,
-            treeNode67,
-            treeNode68});
-            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("PORTA 80");
-            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("UART 81");
-            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("PRAM 88");
-            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("PROM 89");
-            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("INT 8A");
-            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("Mem Mapeadas", new System.Windows.Forms.TreeNode[] {
-            treeNode70,
-            treeNode71,
-            treeNode72,
-            treeNode73,
-            treeNode74});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("ORG");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("NOP");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("MOVLW");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("MOVF");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("MOVWF");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("ADDLW");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("SUBLW");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("ANDLW");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("IORLW");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("COMW");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("RLF");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("RRF");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("GOTO");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("JPC");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("JPZ");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("CALL");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("RETURN");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("END");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Instrucciones", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14,
+            treeNode15,
+            treeNode16,
+            treeNode17,
+            treeNode18});
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("PORTA 80");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("UART 81");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("PRAM 88");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("PROM 89");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("INT 8A");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Mem Mapeadas", new System.Windows.Forms.TreeNode[] {
+            treeNode20,
+            treeNode21,
+            treeNode22,
+            treeNode23,
+            treeNode24});
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ejecutarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -91,6 +91,7 @@
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compilarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compilarSoluciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.compilarYProgramarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ContenedorVertical = new System.Windows.Forms.SplitContainer();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -111,7 +112,8 @@
             this.labelDireccion = new System.Windows.Forms.ToolStripLabel();
             this.ContenedorHorizontal = new System.Windows.Forms.SplitContainer();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
-            this.compilarYProgramarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItemPuerto = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ContenedorVertical)).BeginInit();
@@ -193,40 +195,40 @@
             // nuevoToolStripMenuItem
             // 
             this.nuevoToolStripMenuItem.Name = "nuevoToolStripMenuItem";
-            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.nuevoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.nuevoToolStripMenuItem.Text = "Nuevo";
             this.nuevoToolStripMenuItem.Click += new System.EventHandler(this.nuevoToolStripMenuItem_Click);
             // 
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarToolStripMenuItem.Text = "Guardar";
             this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
             // guardarComoToolStripMenuItem
             // 
             this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.guardarComoToolStripMenuItem.Text = "Guardar como...";
             this.guardarComoToolStripMenuItem.Click += new System.EventHandler(this.guardarComoToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(156, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -234,10 +236,13 @@
             // 
             this.compilarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.compilarSoluciónToolStripMenuItem,
-            this.compilarYProgramarToolStripMenuItem});
+            this.compilarYProgramarToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.toolStripMenuItemPuerto});
             this.compilarToolStripMenuItem.Name = "compilarToolStripMenuItem";
             this.compilarToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.compilarToolStripMenuItem.Text = "Compilar";
+            this.compilarToolStripMenuItem.DropDownOpening += new System.EventHandler(this.compilarToolStripMenuItem_DropDownOpening);
             // 
             // compilarSoluciónToolStripMenuItem
             // 
@@ -245,6 +250,13 @@
             this.compilarSoluciónToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.compilarSoluciónToolStripMenuItem.Text = "Compilar solución";
             this.compilarSoluciónToolStripMenuItem.Click += new System.EventHandler(this.compilarSoluciónToolStripMenuItem_Click);
+            // 
+            // compilarYProgramarToolStripMenuItem
+            // 
+            this.compilarYProgramarToolStripMenuItem.Name = "compilarYProgramarToolStripMenuItem";
+            this.compilarYProgramarToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.compilarYProgramarToolStripMenuItem.Text = "Compilar y programar";
+            this.compilarYProgramarToolStripMenuItem.Click += new System.EventHandler(this.compilarYProgramarToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -347,61 +359,61 @@
             this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode51.Name = "ORG";
-            treeNode51.Text = "ORG";
-            treeNode52.Name = "NOP";
-            treeNode52.Text = "NOP";
-            treeNode53.Name = "MOVLW";
-            treeNode53.Text = "MOVLW";
-            treeNode54.Name = "MOVF";
-            treeNode54.Text = "MOVF";
-            treeNode55.Name = "MOVWF";
-            treeNode55.Text = "MOVWF";
-            treeNode56.Name = "ADDLW";
-            treeNode56.Text = "ADDLW";
-            treeNode57.Name = "SUBLW";
-            treeNode57.Text = "SUBLW";
-            treeNode58.Name = "ANDLW";
-            treeNode58.Text = "ANDLW";
-            treeNode59.Name = "IORLW";
-            treeNode59.Text = "IORLW";
-            treeNode60.Name = "COMW";
-            treeNode60.Text = "COMW";
-            treeNode61.Name = "RLF";
-            treeNode61.Text = "RLF";
-            treeNode62.Name = "RRF";
-            treeNode62.Text = "RRF";
-            treeNode63.Name = "GOTO";
-            treeNode63.Text = "GOTO";
-            treeNode64.Name = "JPC";
-            treeNode64.Text = "JPC";
-            treeNode65.Name = "JPZ";
-            treeNode65.Text = "JPZ";
-            treeNode66.Name = "CALL";
-            treeNode66.Text = "CALL";
-            treeNode67.Name = "RETURN";
-            treeNode67.Text = "RETURN";
-            treeNode68.Name = "END";
-            treeNode68.Text = "END";
-            treeNode69.ForeColor = System.Drawing.Color.Blue;
-            treeNode69.Name = "Instrucciones";
-            treeNode69.Text = "Instrucciones";
-            treeNode70.Name = "PORTA 80";
-            treeNode70.Text = "PORTA 80";
-            treeNode71.Name = "UART 81";
-            treeNode71.Text = "UART 81";
-            treeNode72.Name = "PRAM 88";
-            treeNode72.Text = "PRAM 88";
-            treeNode73.Name = "PROM 89";
-            treeNode73.Text = "PROM 89";
-            treeNode74.Name = "INT 8A";
-            treeNode74.Text = "INT 8A";
-            treeNode75.ForeColor = System.Drawing.Color.Blue;
-            treeNode75.Name = "Mem Mapeadas";
-            treeNode75.Text = "Mem Mapeadas";
+            treeNode1.Name = "ORG";
+            treeNode1.Text = "ORG";
+            treeNode2.Name = "NOP";
+            treeNode2.Text = "NOP";
+            treeNode3.Name = "MOVLW";
+            treeNode3.Text = "MOVLW";
+            treeNode4.Name = "MOVF";
+            treeNode4.Text = "MOVF";
+            treeNode5.Name = "MOVWF";
+            treeNode5.Text = "MOVWF";
+            treeNode6.Name = "ADDLW";
+            treeNode6.Text = "ADDLW";
+            treeNode7.Name = "SUBLW";
+            treeNode7.Text = "SUBLW";
+            treeNode8.Name = "ANDLW";
+            treeNode8.Text = "ANDLW";
+            treeNode9.Name = "IORLW";
+            treeNode9.Text = "IORLW";
+            treeNode10.Name = "COMW";
+            treeNode10.Text = "COMW";
+            treeNode11.Name = "RLF";
+            treeNode11.Text = "RLF";
+            treeNode12.Name = "RRF";
+            treeNode12.Text = "RRF";
+            treeNode13.Name = "GOTO";
+            treeNode13.Text = "GOTO";
+            treeNode14.Name = "JPC";
+            treeNode14.Text = "JPC";
+            treeNode15.Name = "JPZ";
+            treeNode15.Text = "JPZ";
+            treeNode16.Name = "CALL";
+            treeNode16.Text = "CALL";
+            treeNode17.Name = "RETURN";
+            treeNode17.Text = "RETURN";
+            treeNode18.Name = "END";
+            treeNode18.Text = "END";
+            treeNode19.ForeColor = System.Drawing.Color.Blue;
+            treeNode19.Name = "Instrucciones";
+            treeNode19.Text = "Instrucciones";
+            treeNode20.Name = "PORTA 80";
+            treeNode20.Text = "PORTA 80";
+            treeNode21.Name = "UART 81";
+            treeNode21.Text = "UART 81";
+            treeNode22.Name = "PRAM 88";
+            treeNode22.Text = "PRAM 88";
+            treeNode23.Name = "PROM 89";
+            treeNode23.Text = "PROM 89";
+            treeNode24.Name = "INT 8A";
+            treeNode24.Text = "INT 8A";
+            treeNode25.ForeColor = System.Drawing.Color.Blue;
+            treeNode25.Name = "Mem Mapeadas";
+            treeNode25.Text = "Mem Mapeadas";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode69,
-            treeNode75});
+            treeNode19,
+            treeNode25});
             this.treeView1.Size = new System.Drawing.Size(133, 413);
             this.treeView1.TabIndex = 0;
             this.treeView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.treeView1_MouseDoubleClick);
@@ -493,12 +505,16 @@
             this.serialPort1.BaudRate = 115200;
             this.serialPort1.PortName = "COM6";
             // 
-            // compilarYProgramarToolStripMenuItem
+            // toolStripSeparator2
             // 
-            this.compilarYProgramarToolStripMenuItem.Name = "compilarYProgramarToolStripMenuItem";
-            this.compilarYProgramarToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.compilarYProgramarToolStripMenuItem.Text = "Compilar y programar";
-            this.compilarYProgramarToolStripMenuItem.Click += new System.EventHandler(this.compilarYProgramarToolStripMenuItem_Click);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(188, 6);
+            // 
+            // toolStripMenuItemPuerto
+            // 
+            this.toolStripMenuItemPuerto.Name = "toolStripMenuItemPuerto";
+            this.toolStripMenuItemPuerto.Size = new System.Drawing.Size(191, 22);
+            this.toolStripMenuItemPuerto.Text = "Puerto";
             // 
             // Form1
             // 
@@ -575,6 +591,8 @@
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compilarYProgramarToolStripMenuItem;
         private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemPuerto;
     }
 }
 
